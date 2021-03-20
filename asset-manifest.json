@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/gpr20_app/static/css/main.a76821d7.chunk.css",
+    "main.js": "/gpr20_app/static/js/main.47a15774.chunk.js",
+    "main.js.map": "/gpr20_app/static/js/main.47a15774.chunk.js.map",
+    "runtime-main.js": "/gpr20_app/static/js/runtime-main.2dae299c.js",
+    "runtime-main.js.map": "/gpr20_app/static/js/runtime-main.2dae299c.js.map",
+    "static/js/2.ee812c74.chunk.js": "/gpr20_app/static/js/2.ee812c74.chunk.js",
+    "static/js/2.ee812c74.chunk.js.map": "/gpr20_app/static/js/2.ee812c74.chunk.js.map",
+    "index.html": "/gpr20_app/index.html",
+    "static/css/main.a76821d7.chunk.css.map": "/gpr20_app/static/css/main.a76821d7.chunk.css.map",
+    "static/js/2.ee812c74.chunk.js.LICENSE.txt": "/gpr20_app/static/js/2.ee812c74.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2dae299c.js",
+    "static/js/2.ee812c74.chunk.js",
+    "static/css/main.a76821d7.chunk.css",
+    "static/js/main.47a15774.chunk.js"
+  ]
+}
