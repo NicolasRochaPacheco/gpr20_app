@@ -1,0 +1,222 @@
+
+.navbar {
+  height: 7vh;
+  display: flex;
+  margin: 1vh 0vw;
+  padding: 0vh 1vw;
+  font-size: 1.75vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-size: 4vh;
+  font-weight: 700;
+}
+
+.navbar-link {
+  color: #000;
+  padding: 1vh 1vw;
+  text-decoration: none;
+}
+
+.navbar-connection {
+  justify-content: center;
+}
+
+.navbar-connection-list {
+  padding: 0px;
+  display: grid;
+  gap: 0vh 0.5vh;
+  list-style: none;
+  grid-template-columns: repeat(4, auto);
+}
+
+.navbar-connection-input {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-connection-input-button {
+  border: 0px;
+  padding: 10px;
+  background: var(--button-background);
+  border-radius: 5px;
+  font-size: 0.75em;
+}
+
+.navbar-connection-input-button:hover:enabled {
+  cursor: pointer;
+  background: var(--button-background-hover);
+}
+
+.navbar-connection-input-label {
+  font-size: 0.75em;
+  margin-right: 5px;
+}
+
+.navbar-connection-input-field {
+  padding: 10px;
+  font-size: 0.75em;
+  border-width: 0px;
+  margin-right: 5px;
+  border-radius: 5px;
+  width: 7.5vw;
+  text-align: center;
+  background: var(--input-background);
+}
+
+.navbar-connection-input-field.port {
+  width: 3vw;
+}
+
+.navbar-connection-input-field:disabled {
+  border: 1px solid var(--input-background);
+  background: none;
+}
+
+/* NAVIGATION PANEL */
+.navbar-navigation {
+  padding: 0vw;
+  justify-content: center;
+}
+
+.navbar-navigation-list {
+  gap: 0px 0.5vh;
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.navbar-navigation-list-item {
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  background: var(--button-background);
+}
+
+.navbar-navigation-list-item:hover {
+  cursor: pointer;
+  background: var(--button-background-hover);
+}
+
+/* ICON CLASS: DESKTOP */
+.mobile-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 50px;
+    display: flex;
+    font-size: 15px;
+    margin: 10px 0px 0px 0px;
+    justify-content: center;
+    transition: all 0.5s ease;
+  }
+
+  .navbar.active {
+    margin-bottom: 195px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-logo {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /* NAVIGATION PANEL */
+  .navbar-navigation {
+    width: 90vw;
+    top: -100vh;
+    display: flex;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    min-height: 175px;
+    max-height: 175px;
+    position: absolute;
+    align-items: center;
+  }
+
+  .navbar-navigation.active {
+    top: 60px;
+  }
+
+  .navbar-navigation-list {
+    width: 100%;
+    display: block;
+    padding: 0px 5vw;
+    align-items: center;
+  }
+
+  .navbar-navigation-list-item {
+    margin: 1vh 0px;
+    padding: 0.5vh 0px;
+  }
+
+  .navbar-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* CONNECTION PANEL */
+  .navbar-connection {
+    width: 90vw;
+    top: -100vh;
+    display: flex;
+    min-height: 175px;
+    max-height: 175px;
+    position: absolute;
+    align-items: center;
+  }
+
+  .navbar-connection.active {
+    top: 60px;
+  }
+  
+  .navbar-connection-list {
+    width: 100%;
+    display: block;
+    padding: 0px 5vw;
+    align-items: center;
+  }
+
+  .navbar-connection-list-item {
+    width: 100%;
+    padding: 4px 0px;
+  }
+
+  .navbar-connection-input {
+    width: 100%;
+    display: flex;
+  }
+
+  .navbar-connection-input-label {
+    width: 10vw;
+  }
+
+  .navbar-connection-input-button {
+    width: 100%;
+  }
+
+  .navbar-connection-input-field {
+    width: 100%;
+  }
+
+  .navbar-connection-input-field.port {
+    width: 100%;
+  }
+
+  /* ICON CLASS: DESKTOP */
+  .mobile-icon {
+    display: block;
+    width: 15%;
+    margin: 0% 2.5%;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+  }
+
+}

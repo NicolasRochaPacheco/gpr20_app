@@ -1,0 +1,44 @@
+
+.survey {
+  gap: 1vh;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+.survey-config {
+  gap: 1vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.survey-panel {
+  padding: 15px;
+}
+
+.main-control {
+  display: grid;
+  margin: 10px 0px;
+  padding: 15px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px
+}
+
+@media (max-width: 768px) {
+
+  .survey {
+    gap: 0px;
+  }
+
+  .survey-config {
+    display: block;
+  }
+
+  .survey-panel {
+    margin: 10px 0px;
+  }
+
+  .main-control {
+    margin: 0vh 0px;
+  }
+
+}

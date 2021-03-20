@@ -1,0 +1,53 @@
+
+.home {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+.home-config {
+  display: grid;
+  gap: 1vh;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.panel {
+  padding: 15px;
+}
+
+.panel-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.home-table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-table-label {
+  width: 30%;
+  text-align: right;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  .home {
+    gap: 0px;
+  }
+
+  .home-config {
+    display: block;
+  }
+
+  .panel {
+    min-height: 0px;
+    margin: 10px 0px;
+  }
+
+  .home-table-label {
+    width: 40%;
+  }
+
+}

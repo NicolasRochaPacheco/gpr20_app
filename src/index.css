@@ -1,0 +1,53 @@
+:root {
+  --body-color-main-0:  #2e78b7;
+  --body-color-main-1:  #f9aca0;
+  --body-color-main-2:  #fae7d8;
+  --body-color-main-3:  #accbfa;
+
+  --glass-color-background: rgba(255, 255, 255, 0.4);
+  
+  --button-background: rgba(255, 255, 255, 0.4);
+  --button-background-hover: rgba(255, 255, 255, 0.75);
+
+  --input-background: rgba(255, 255, 255, 0.25);
+
+  --color-style-light: rgba(255, 255, 255, 0.25);
+  --color-style-dark: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 90vw;
+  margin: auto;
+  overflow: hidden;
+  min-height: 100vh;
+  background: linear-gradient(0deg, var(--body-color-main-0) 0%, var(--body-color-main-1) 30%, var(--body-color-main-2) 45%, var(--body-color-main-3) 100%);
+}
+
+button {
+  padding: 10px;
+  border-width: 0px;
+  border-radius: 5px;
+  background: var(--button-background);
+}
+
+button:hover:enabled {
+  background: var(--button-background-hover);
+}
+
+.glass-component {
+  background: var(--glass-color-background);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 95vw;
+    overflow: auto;
+  }
+}
