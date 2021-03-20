@@ -95,17 +95,17 @@ function Navbar(props) {
       <div className={!menuClick ? "navbar-navigation" : "glass-component navbar-navigation active"}>
         <div className="navbar-navigation-list">
           <div className="navbar-navigation-list-item">
-            <Link to="/" className="navbar-link" onClick={resetNavigation}>
+            <Link to="/gpr20_app/" className="navbar-link" onClick={resetNavigation}>
               HOME
             </Link>
           </div>
           <div className="navbar-navigation-list-item">
-            <Link to="/survey" className="navbar-link" onClick={resetNavigation}>
+            <Link to="/gpr20_app/survey" className="navbar-link" onClick={resetNavigation}>
               SURVEY
             </Link>
           </div>
           <div className="navbar-navigation-list-item">
-            <Link to="/data" className="navbar-link" onClick={resetNavigation}>
+            <Link to="/gpr20_app/data" className="navbar-link" onClick={resetNavigation}>
               DATA
             </Link>
           </div>
