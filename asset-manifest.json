@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gpr20_app/static/css/main.a76821d7.chunk.css",
-    "main.js": "/gpr20_app/static/js/main.e164be40.chunk.js",
-    "main.js.map": "/gpr20_app/static/js/main.e164be40.chunk.js.map",
+    "main.js": "/gpr20_app/static/js/main.79cc9037.chunk.js",
+    "main.js.map": "/gpr20_app/static/js/main.79cc9037.chunk.js.map",
     "runtime-main.js": "/gpr20_app/static/js/runtime-main.2dae299c.js",
     "runtime-main.js.map": "/gpr20_app/static/js/runtime-main.2dae299c.js.map",
     "static/js/2.ee812c74.chunk.js": "/gpr20_app/static/js/2.ee812c74.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.2dae299c.js",
     "static/js/2.ee812c74.chunk.js",
     "static/css/main.a76821d7.chunk.css",
-    "static/js/main.e164be40.chunk.js"
+    "static/js/main.79cc9037.chunk.js"
   ]
 }
