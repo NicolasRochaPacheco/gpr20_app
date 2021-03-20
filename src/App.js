@@ -93,7 +93,7 @@ class App extends React.Component {
         />
 
         <Switch>
-          <Route path="/" exact>
+          <Route path="/gpr20_app/" exact>
             <Home 
               status={this.state.rosConnected}
               ip={this.state.ip}
