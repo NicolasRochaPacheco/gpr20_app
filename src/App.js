@@ -82,7 +82,7 @@ class App extends React.Component {
 
   render(){
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL} >
         
         <Navbar 
           rosConnected={this.state.rosConnected}
@@ -93,7 +93,7 @@ class App extends React.Component {
         />
 
         <Switch>
-          <Route path="/gpr20_app/" exact>
+          <Route path="/" exact>
             <Home 
               status={this.state.rosConnected}
               ip={this.state.ip}
@@ -102,8 +102,8 @@ class App extends React.Component {
             />
           </Route>
 
-          <Route path="/gpr20_app/survey" component={Survey} />
-          <Route path="/gpr20_app/data" component={Data} />
+          <Route path="/survey" component={Survey} />
+          <Route path="/data" component={Data} />
         </Switch>
       </Router>
     );
